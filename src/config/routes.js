@@ -1,4 +1,5 @@
 import App from '../app'
+
 /**
  * auth true登录才能访问，false不需要登录，默认true
  */
@@ -9,7 +10,7 @@ export default [
         children: [
             {
                 path: '/login', //登录
-                meta: { auth: false },
+                meta: {auth: false},
                 component: resolve => require(['../pages/login/'], resolve)
             },
             {
@@ -22,7 +23,7 @@ export default [
             },
             {
                 path: '/', //首页
-                meta: { auth: false },
+                meta: {auth: false},
                 component: resolve => require(['../pages/index/'], resolve)
             },
             {
